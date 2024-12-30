@@ -1,0 +1,10 @@
+{
+  "id": "smiley",
+  "name": "Smiley",
+  "version": "${version}",
+  "description": "Another layer for BungeeCord and Velocity",
+  "authors": [
+    "Pino"
+  ],
+  "main": "it.pino.smiley.velocity.SmileyPlugin"
+}

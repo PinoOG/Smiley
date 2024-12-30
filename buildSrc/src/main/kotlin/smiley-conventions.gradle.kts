@@ -12,6 +12,9 @@ repositories {
         name = "papermc"
         url = uri("https://repo.papermc.io/repository/maven-public/")
     }
+    maven("https://oss.sonatype.org/content/groups/public/") {
+        name = "sonatype"
+    }
 }
 
 
@@ -23,7 +26,16 @@ tasks {
     withType<Javadoc> {
         options.encoding = "UTF-8"
     }
-
+    processResources {
+        val props = mapOf("version" to version)
+        inputs.properties(props)
+        filesMatching("plugin.yml") {
+            expand(props)
+        }
+        filesMatching("velocity-plugin.json") {
+            expand(props)
+        }
+    }
 }
 
 java {

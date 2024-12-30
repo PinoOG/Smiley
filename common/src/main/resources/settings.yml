@@ -1,0 +1,19 @@
+version: 1
+
+token: ''
+
+log-blocked-requests: true
+log-allowed-requests: false
+
+anti-dos:
+  enabled: true
+  max-requests: 15
+  every-millis: 500
+  kick-player: true
+
+channels-whitelist:
+  - 'lunar:apollo'
+
+messages:
+  missing-token: '&cYou need to set your token in the settings.yml file in order to use this command!'
+  kick: '&cYou are sending too many payloads to the server.'

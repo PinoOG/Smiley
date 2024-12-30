@@ -25,7 +25,16 @@ replay_pid*
 
 .gradle
 .idea/
-
+.lib/
 # Packages based
 buildSrc/build
 buildSrc/.gradle
+
+common/build
+common/.gradle
+
+velocity/build
+velocity/.gradle
+
+bungee/build
+bungee/.gradle
